@@ -1,0 +1,11 @@
+@extends("layout.html")
+
+@def content():
+@require(path_for, photos)
+<h1>Photos</h1>
+	@for p in photos:
+		<p>
+		    <img src="/@p"/>
+		</p>
+	@end
+@end

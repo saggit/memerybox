@@ -1,0 +1,11 @@
+@extends("layout.html")
+
+@def content():
+@require(path_for, albums)
+<h1>Albums</h1>
+	@for a in albums:
+		<p>
+			<a href="/album/@a[0]">@a[0]</a>
+		</p>
+	@end
+@end
