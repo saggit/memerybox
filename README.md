@@ -9,7 +9,7 @@ eg:
 
     static/
     
-          photos/
+          album/
             title 1/
               photo1
               photo2
