@@ -1,5 +1,5 @@
 # memerybox
-a very simple photo browse
+a very simple photo browse demo
 
 memerybox does not implment image upload, edit and such thing,  what memerybox can do is just browse photos on browsers.
 
