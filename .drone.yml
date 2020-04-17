@@ -1,0 +1,19 @@
+---
+kind: pipeline
+type: exec
+name: default
+
+platform:
+  os: darwin
+  arch: amd64
+
+trigger:
+  branch:
+  - master
+  event:
+  - push
+
+steps:
+- name: greeting
+  commands:
+  - echo hello world
