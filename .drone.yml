@@ -8,12 +8,15 @@ platform:
   arch: amd64
 
 trigger:
+  repo:
+  - saggit/memerybox
   branch:
-  - master
+  - dev
   event:
   - push
 
 steps:
-- name: greeting
+- name: deploy
   commands:
-  - echo hello world
+  - /Users/kelvince/py3env/bin/pip install -r requirements.txt
+  - nohup /Users/kelvince/py3env/bin/python app.py &
